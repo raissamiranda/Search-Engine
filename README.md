@@ -14,19 +14,19 @@ The collector will comunicate with its scheduler through an input file (given as
 
 ● ADD_URLS <number>: adds the URLs informed in the following lines to the scheduler. The <quantity> parameter indicates how many lines will be read before the next command.
   
-● SCALONA_TUDO: scales all URLs following previously established rules. When scaled, URLs are displayed and removed from the list.
+● ESCALONA_TUDO: scales all URLs following previously established rules. When scaled, URLs are displayed and removed from the list.
   
-● SCALE <number>: Limits the number of scaled URLs.
+● ESCALONA <number>: Limits the number of scaled URLs.
   
-● SCALE_HOST <host> <number>: only URLs from this host are scaled.
+● ESCALONA_HOST <host> <number>: only URLs from this host are scaled.
   
 ● VER_HOST <host>: displays all host URLs, in order of priority.
   
 ● LISTA_HOSTS: displays all hosts, following the order in which they were known.
   
-● CLEAN_HOST <host>: cleans the list of host URLs.
+● LIMPA_HOST <host>: cleans the list of host URLs.
   
-● CLEAN_TUDO: cleans all URLs, including hosts.
+● LIMPA_TUDO: cleans all URLs, including hosts.
  
 ## Example
 ### Input
