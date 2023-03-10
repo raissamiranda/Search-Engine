@@ -15,7 +15,9 @@ To install the program, it is necessary to acess the diretory where the program 
 
 Now, you must execute the make command and run the program with the name of the test .txt file:
 > make
+> 
 > cd bin
+> 
 > ./ main -pathtotest-
 
 A file will be created with the same name as the input file, but with the suffix -out in the same directory with the output data.
