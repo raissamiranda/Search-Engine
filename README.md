@@ -30,18 +30,7 @@ The collector will comunicate with its scheduler through an input file (given as
  
 ## Example
 ### Input
-  
-  http://globoesporte.com/page1.js?q=copa
-  http://globo.com
-  globoesporte.com
-  globo.com
-  uol.com.br
-  superdownloads.com.br
-  http://globo.com
-  http://globo.com/videos
-  http://globo.com/videos/jornalnacional
 
-  
 >ADD_URLS 5
 >
 >http://www.globoesporte.com/page1.js?q=copa#group1
@@ -90,11 +79,6 @@ The collector will comunicate with its scheduler through an input file (given as
 >http://globo.com/videos
 >
 >http://globo.com/videos/jornalnacional
-
-  
-
-
-
 
 
 ## Execution's instructions
