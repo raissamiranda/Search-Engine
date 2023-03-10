@@ -32,30 +32,52 @@ The collector will comunicate with its scheduler through an input file (given as
 ### Input
   
 >ADD_URLS 5
+>
 >http://www.globoesporte.com/page1.js?q=copa#group1
+>  
 >ftp://ftp.globo.com
+>  
 >http://www.globo.com/
+>  
 >http://www.uol.com.br/
+>  
 >http://www.superdownloads.com.br/
+>  
 >ESCALONA 2
+>  
 >LISTA_HOSTS
+>  
 >ADD_URLS 4
+>  
 >http://www.globo.com/videos/jornalnacional
+>  
 >http://globo.com/
+>  
 >http://globoesporte.com/spfc/index.html
+>  
 >http://globo.com/videos/
+>  
 >ESCALONA_HOST globo.com 2
+>  
 >VER_HOST globo.com
   
 ### Output
 >http://globoesporte.com/page1.js?q=copa
+>  
 >http://globo.com
+>  
 >globoesporte.com
+>  
 >globo.com
+>  
 >uol.com.br
+>  
 >superdownloads.com.br
+>  
 >http://globo.com
+>  
 >http://globo.com/videos
+>
 >http://globo.com/videos/jornalnacional
 
   
