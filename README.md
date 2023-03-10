@@ -1,2 +1,4 @@
-# Search-Engine
-This advanced search engine retrieves documents according to their relevance using hashing to the memory indexer and develops a query processor.
+# URL Scheduler
+
+The main component of a search engine is a collector. With the large number os existing URLs actually, it's necessary to use a scheduler to define the collection order of the pages.
+The collector developed in this project uses the depth-first strategy, which priorizes sites and URLs found first. The depth criterion priorizes URLs closer to the root of the site, that is, $http:://ufmg.br$ must be collected before $http:://ufmg.br/dcc$.
