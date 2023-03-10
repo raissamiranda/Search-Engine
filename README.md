@@ -13,14 +13,23 @@ must be collected before
 The collector will comunicate with its scheduler through an input file (given as argument, on the command line), which has a sequence of commands to be executed. A file will be created with the same name as the input file, but with the suffix -out in the same directory with the output data. The commands are:
 
 ● ADD_URLS <number>: adds the URLs informed in the following lines to the scheduler.
+  
 The <quantity> parameter indicates how many lines will be read before the next command.
+  
 ● SCALONA_TUDO: scales all URLs following previously established rules.
+  
 When scaled, URLs are displayed and removed from the list.
+  
 ● SCALE <number>: Limits the number of scaled URLs.
+  
 ● SCALE_HOST <host> <number>: only URLs from this host are scaled.
+  
 ● VER_HOST <host>: displays all host URLs, in order of priority.
+  
 ● LISTA_HOSTS: displays all hosts, following the order in which they were known.
+  
 ● CLEAN_HOST <host>: cleans the list of host URLs.
+  
 ● CLEAN_TUDO: cleans all URLs, including hosts.
 
 
