@@ -9,16 +9,12 @@ The collector developed in this project, with no use of STL or other libraries, 
 must be collected before 
 > http:://ufmg.br/dcc
 
-## Example
+## Usage
 The collector will comunicate with its scheduler through an input file (given as argument, on the command line), which has a sequence of commands to be executed. A file will be created with the same name as the input file, but with the suffix -out in the same directory with the output data. The commands are:
 
-● ADD_URLS <number>: adds the URLs informed in the following lines to the scheduler.
+● ADD_URLS <number>: adds the URLs informed in the following lines to the scheduler. The <quantity> parameter indicates how many lines will be read before the next command.
   
-The <quantity> parameter indicates how many lines will be read before the next command.
-  
-● SCALONA_TUDO: scales all URLs following previously established rules.
-  
-When scaled, URLs are displayed and removed from the list.
+● SCALONA_TUDO: scales all URLs following previously established rules. When scaled, URLs are displayed and removed from the list.
   
 ● SCALE <number>: Limits the number of scaled URLs.
   
@@ -31,7 +27,38 @@ When scaled, URLs are displayed and removed from the list.
 ● CLEAN_HOST <host>: cleans the list of host URLs.
   
 ● CLEAN_TUDO: cleans all URLs, including hosts.
+ 
+## Example
+### Input
+  
+>ADD_URLS 5
+>http://www.globoesporte.com/page1.js?q=copa#group1
+>ftp://ftp.globo.com
+>http://www.globo.com/
+>http://www.uol.com.br/
+>http://www.superdownloads.com.br/
+>ESCALONA 2
+>LISTA_HOSTS
+>ADD_URLS 4
+>http://www.globo.com/videos/jornalnacional
+>http://globo.com/
+>http://globoesporte.com/spfc/index.html
+>http://globo.com/videos/
+>ESCALONA_HOST globo.com 2
+>VER_HOST globo.com
+  
+### Output
+>http://globoesporte.com/page1.js?q=copa
+>http://globo.com
+>globoesporte.com
+>globo.com
+>uol.com.br
+>superdownloads.com.br
+>http://globo.com
+>http://globo.com/videos
+>http://globo.com/videos/jornalnacional
 
+  
 
 
 
