@@ -63,7 +63,8 @@ cd -directory-
 
 Now, you must execute the make command and run the program with the name of the test .txt file:
 ```
-makecd bin
+cd bin
+make
 ./ main -pathtotest-
 ```
 
