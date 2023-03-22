@@ -24,11 +24,9 @@ The collector will comunicate with its scheduler through an input file (given as
  
 ## Example
 ### Input
-
->ADD_URLS 5
-
->http://www.globoesporte.com/page1.js?q=copa#group1
- 
+```
+ADD_URLS 5
+http://www.globoesporte.com/page1.js?q=copa#group1
 ftp://ftp.globo.com
 http://www.globo.com/
 http://www.uol.com.br/
@@ -42,6 +40,7 @@ http://globoesporte.com/spfc/index.html
 http://globo.com/videos/
 ESCALONA_HOST globo.com 2 
 VER_HOST globo.com
+```
   
 ### Output
 ```
